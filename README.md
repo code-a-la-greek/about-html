@@ -11,11 +11,14 @@
     - `aside`
     - `article`
     - `nav`
+    - `div` "box" for general use
     - `h1 - h6` for titles
     - `p` for paragraphs 
     - `a` for links
     - `ul/ol` for lists
     - `li` for list-items
+    - `img/video/audio` for multimedia
+    - `form`
     - `b/strong` for bold letters
     - `em` for italics
     - `small` for small letters
