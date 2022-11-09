@@ -1,5 +1,6 @@
-# Html for beginners - The basics
+# Html for beginners
 
+##  The basics
 Σε αυτο το [βιντεο](https://youtu.be/R110EN9QfzA) βλεπουμε τα βασικα στοιχεία του Html.
 
 - στο `head` βάζουμε περιεχόμενο ειδικό για τους browser. Metadata, page-title, css, javascript and/or 3-party libraries
@@ -24,3 +25,13 @@
     - `small` for small letters
     - `br` for breaking a line
     - `hr` for horizontal line
+
+
+## Multimedia
+Σε αυτο το [βιντεο](https://youtu.be/) εξετάζουμε html tags που προσθέτουν multimedia δυνατοτητες στη σελίδα μας.
+
+- `video` tag 
+- `audio` tag 
+- `img` tag
+- `figure` tag
+- `picture` tag

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 εικόνα, 1000 λέξεις</title>
+    <style>
+        img,
+        picture,
+        video,
+        iframe,
+        figure {
+            max-width: 100%;
+            display: block;
+            height: auto;
+            margin-block: 2rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <video src="./video.mp4" autoplay muted controls width="500 "></video>
+
+    <audio src="./song.mp3" controls autoplay muted ></audio>
+
+
+    <img src="./example.jpg" alt="ένα αρκουδάκι, λογκο του Go" width="500">
+
+    <img src="https:/source.unsplash.com/random" width="300" alt="yellow couch">
+
+    <picture>
+        <source media="(min-width:1000px)" srcset="https:/source.unsplash.com/random" >
+        <img src="./example.jpg" alt="logo">
+    </picture>
+
+    <figure>
+
+<img src="./example.jpg" alt="logo">
+<figcaption>2 images from file</figcaption>
+    </figure>
+</body>
+</html>
