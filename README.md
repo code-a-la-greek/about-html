@@ -1,6 +1,6 @@
 # Html for beginners
 
-##  The basics
+##  The_basics
 Σε αυτο το [βιντεο](https://youtu.be/R110EN9QfzA) βλεπουμε τα βασικα στοιχεία του Html.
 
 - στο `head` βάζουμε περιεχόμενο ειδικό για τους browser. Metadata, page-title, css, javascript and/or 3-party libraries
