@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            padding: 1rem;
+            line-height: 1.5;
+            font-size: x-large;
+        }
+
+        body {
+            min-height: 100vh;
+            text-rendering: optimizeSpeed;
+        }
+
+        input {
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form autocomplete="off">
+
+        <fieldset>
+            <legend>Group</legend>
+        <label for="name">Όνομα</label>
+        <input type="text" name="name" id="name" placeholder="your name" maxlength="5" required>
+
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+
+        <br>
+
+        <label for="password">Your password</label>
+        <input type="password" name="password" id="password" required>
+
+        <br>
+
+        <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+
+        </fieldset>
+
+
+
+        <br>
+
+        <input type="reset" value="Cancel">
+        <input type="submit" value="Send">
+
+    </form>
+<form>
+    <label for="car">I have a car</label>
+<input type="checkbox" name="car" id="car" value="car" checked>
+
+</form>
+
+</body>
+
+</html>
