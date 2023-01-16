@@ -1,0 +1,40 @@
+/* RESET CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  line-height: 1.5;
+}
+
+img,
+picture,
+figure {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+p {
+  max-inline-size: clamp(45ch, 66ch, 75ch);
+}
+/* GENERAL CSS */
+body {
+  font-family: system-ui;
+  background-image: linear-gradient(rgba(247, 47, 184, 0.636), pink),
+    url("./assets/images/img-01.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+section {
+  background-color: white;
+  width: 70vw;
+  padding: 2rem;
+  margin: 2rem auto;
+  color: black;
+}
+
+section h2{
+    padding-bottom: 2rem;
+}
