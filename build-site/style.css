@@ -32,9 +32,94 @@ section {
   width: 70vw;
   padding: 2rem;
   margin: 2rem auto;
-  color: black;
 }
 
-section h2{
-    padding-bottom: 2rem;
+section h2 {
+   
+}
+
+/* HEADER */
+
+header {
+  display: grid;
+  place-items: center;
+  gap: 0.5rem;
+  padding-block: 2rem;
+}
+
+h1,
+header p,
+header a {
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* ABOUT ME */
+.about {
+  display: grid;
+  gap: 1rem;
+}
+
+.about img {
+  width: 100%;
+}
+/* PROJECTS */
+.projects{
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: column;
+}
+
+.projects figure{
+  grid-row: 2;
+}
+
+figcaption{
+  font-weight: bold;
+}
+
+/* WORK */
+
+article p{
+  padding-top: 1rem;
+}
+.full-length{
+  max-inline-size: unset;
+}
+
+/* EDUCATION */
+.education{
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: column;
+}
+
+.education article{
+  grid-row: 2;
+}
+
+
+
+
+
+
+
+@media (min-width: 1024px) {
+  .about {
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center; 
+     
+  }
+ 
+  .about h2{
+    grid-column: span 2;
+  }
+  .about img {
+    grid-row: 2/4;
+  }
 }
