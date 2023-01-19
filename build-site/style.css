@@ -104,6 +104,15 @@ article p{
   display: grid;
   grid-auto-flow: column;
 }
+
+/*CAROUSEL*/
+.carousel{
+  padding-top: 2rem;
+}
+.carousel figure img{
+  width: 100%;
+}
+
 /*SOCIAL*/
 .social{
     padding-block-start: 2rem;

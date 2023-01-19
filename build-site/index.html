@@ -11,7 +11,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'"/>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
+    <script async defer src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 
 <body>
@@ -127,23 +129,25 @@
     </section>
     <section>
       <h2>Projects</h2>
-      <figure>
-        <img src="./assets/images/img-05.jpg" width="300" alt="a child in the woods" />
-        <figcaption>Jules for Bastion</figcaption>
-        <p>2017</figcaption>
-      </figure>
-      <figure>
-        <img src="./assets/images/img-06.jpg" width="300" alt="children in the woods" />
-        <figcaption>Kids in Woods</figcaption>
-        <p>2016</figcaption>
-      </figure>
-      <figure>
-        <img src="./assets/images/img-08.jpg" width="300" alt="a little girl touching a glass wall" />
-        <figcaption>Girl and the Glass</figcaption>
-        <p>2015</p>
-      </figure>
-      <button>Previous</button>
-      <button>Next</button>
+      <div class="carousel" data-flickity='{ "cellAlign": "center", "contain": true }'>
+        <figure>
+          <img src="./assets/images/img-05.jpg" width="300" alt="a child in the woods" />
+          <figcaption>Jules for Bastion</figcaption>
+          <p>2017</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/images/img-06.jpg" width="300" alt="children in the woods" />
+          <figcaption>Kids in Woods</figcaption>
+          <p>2016</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/images/img-08.jpg" width="300" alt="a little girl touching a glass wall" />
+          <figcaption>Girl and the Glass</figcaption>
+          <p>2015</p>
+        </figure>
+      </div>
+     <!--  <button>Previous</button>
+      <button>Next</button> -->
     </section>
 
     <section>
