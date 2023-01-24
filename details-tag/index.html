@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Details element</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    details {
+      background-color: lightblue;
+      width: 50%;
+
+    }
+
+    summary {
+      color: red;
+      padding: 1rem;
+      /* list-style: "😀";
+      list-style-position: inside; */
+    }
+
+    summary::marker {
+      color: purple;
+
+    }
+
+    details[open] summary {
+      list-style: "😀";
+      list-style-position: inside;
+    }
+  </style>
+</head>
+
+<body>
+  <details>
+    <summary>
+      Title
+    </summary>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quaerat voluptate est sequi aperiam eum nostrum
+      dolor natus perspiciatis explicabo. Omnis deserunt animi nam necessitatibus, itaque ea pariatur temporibus
+      obcaecati.</p>
+  </details>
+
+</body>
+
+</html>
