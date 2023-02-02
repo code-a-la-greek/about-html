@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   line-height: 1.5;
 }
@@ -16,9 +17,11 @@ figure {
   display: block;
   height: auto;
 }
+
 p {
   max-inline-size: clamp(45ch, 66ch, 75ch);
 }
+
 /* GENERAL CSS */
 body {
   font-family: system-ui;
@@ -27,6 +30,7 @@ body {
   background-repeat: no-repeat;
   background-position: top;
 }
+
 section {
   background-color: white;
   width: 70vw;
@@ -36,7 +40,8 @@ section {
 
 /* HEADER */
 
-header,footer {
+header,
+footer {
   display: grid;
   place-items: center;
   gap: 0.5rem;
@@ -45,11 +50,14 @@ header,footer {
 
 h1,
 header p,
-header a,footer, footer a {
+header a,
+footer,
+footer a {
   color: white;
 }
 
-nav ul, footer ul {
+nav ul,
+footer ul {
   list-style: none;
   display: flex;
   gap: 1.5rem;
@@ -64,66 +72,58 @@ nav ul, footer ul {
 .about img {
   width: 100%;
 }
-/* PROJECTS */
-.projects{
-  display: grid;
-  gap: 1rem;
-  grid-auto-flow: column;
-}
 
-.projects figure{
-  grid-row: 2;
-}
+/* PROJECTS
+    Το projects-section αλλάζει layout αργότερα μέσω media queries
+*/
 
-.projects p{
+.projects p {
   font-weight: bold;
 }
 
 /* WORK */
 
-article p{
+article p {
   padding-top: 1rem;
 }
-.full-length{
+
+.full-length {
   max-inline-size: unset;
 }
 
-/* EDUCATION */
-.education{
-  display: grid;
-  gap: 1rem;
-  grid-auto-flow: column;
-}
+/* EDUCATION 
+  Το education-section αλλάζει layout αργότερα μέσω media queries 
+*/
 
-.education article{
-  grid-row: 2;
-}
 /* LANGUAGE*/
-.language{
+.language {
   padding-block-start: 2rem;
-  display: grid;
-  grid-auto-flow: column;
+  /*Το language-section αλλάζει layout αργότερα μέσω media queries */
 }
 
 /*CAROUSEL*/
-.carousel{
+.carousel {
   padding-top: 2rem;
 }
-.carousel figure img{
+
+.carousel figure img {
   width: 100%;
 }
 
 /*SOCIAL*/
-.social{
-    padding-block-start: 2rem;
-    display: flex;
-    gap: 3rem;
-
+.social {
+  padding-block-start: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
 }
 
-.social a{color: black;text-decoration: none;}
+.social a {
+  color: black;
+  text-decoration: none;
+}
 
-.social a i{
+.social a i {
   border: 1px solid black;
   border-radius: 100%;
   padding: 8px;
@@ -132,46 +132,88 @@ article p{
 
 /*FORM*/
 
-form{
+form {
   display: flex;
   flex-direction: column;
   padding-block-start: 1rem;
   gap: 1rem;
 }
-input,textarea{
+
+input,
+textarea {
   padding: 1rem;
   background-color: lightgray;
   border: none;
   border-radius: 5px;
 }
 
-input[type="submit"]{
+input[type="submit"] {
   max-inline-size: fit-content;
-  background-image: linear-gradient(to right,pink 30%,red);
+  background-image: linear-gradient(to right, #ffc0cb 30%, red);
 }
 
 /*FOOTER*/
-footer{
-font-weight: bold;
+footer {
+  font-weight: bold;
 }
-footer img{width: 40px;}
-footer li{
+
+footer img {
+  width: 40px;
+}
+
+footer li {
   /* transform: scale(1.5); */
   scale: 1.5;
 }
 
+@media(min-width:425px) {
+
+  .education,
+  .language,
+  .projects {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
+  }
+
+  .education article,
+  .projects figure {
+    grid-row: 2;
+  }
+
+}
 
 @media (min-width: 1024px) {
   .about {
     grid-template-columns: 1fr 1.5fr;
-    align-items: center; 
-     
+    align-items: center;
   }
- 
-  .about h2{
+
+  .about h2 {
     grid-column: span 2;
   }
+
   .about img {
     grid-row: 2/4;
+  }
+}
+
+@media(prefers-color-scheme:dark) {
+  body {
+    color: #BEA5A9;
+    background-image: linear-gradient(rgba(145, 29, 108, 0.636), pink),
+      url("./assets/images/img-01.jpg");
+  }
+
+  section {
+    background-color: #574145;
+  }
+
+  input[type="submit"] {
+    background-image: linear-gradient(to right, rgb(168, 133, 139) 30%, darkred);
+  }
+
+  .social a {
+    color: #BEA5A9;
   }
 }
