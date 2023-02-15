@@ -17,5 +17,6 @@
 - δημιουργία contact-form
 - χρήση media queries
 - δημιουργία dark-theme
+- custom-properties
 
 [Δείτε live τη σελίδα](https://code-a-la-greek.github.io/about-html/build-site/)

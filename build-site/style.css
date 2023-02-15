@@ -1,3 +1,19 @@
+:root{
+  --main-color: white;
+  --font-family:system-ui;
+  --section-bg: white;
+  --bg-color:linear-gradient(rgba(247, 47, 184, 0.636), pink);
+}
+
+@media(prefers-color-scheme:dark){
+  :root{
+      --bg-color: linear-gradient(rgba(145, 29, 108, 0.636), pink);
+      --section-bg: #574145;
+      --main-color:#BEA5A9;
+  }
+}
+
+
 /* RESET CSS */
 
 * {
@@ -24,15 +40,15 @@ p {
 
 /* GENERAL CSS */
 body {
-  font-family: system-ui;
-  background-image: linear-gradient(rgba(247, 47, 184, 0.636), pink),
+  font-family: var(--font-family);
+  background-image: var(--bg-color),
     url("./assets/images/img-01.jpg");
   background-repeat: no-repeat;
   background-position: top;
 }
 
 section {
-  background-color: white;
+  background-color: var(--section-bg);
   width: 70vw;
   padding: 2rem;
   margin: 2rem auto;
@@ -53,7 +69,7 @@ header p,
 header a,
 footer,
 footer a {
-  color: white;
+  color: var(--main-color);
 }
 
 nav ul,
@@ -200,13 +216,13 @@ footer li {
 
 @media(prefers-color-scheme:dark) {
   body {
-    color: #BEA5A9;
-    background-image: linear-gradient(rgba(145, 29, 108, 0.636), pink),
+    color: var(--main-color);
+    background-image:var(--bg-color),
       url("./assets/images/img-01.jpg");
   }
 
   section {
-    background-color: #574145;
+    background-color: var(--section-bg);
   }
 
   input[type="submit"] {
